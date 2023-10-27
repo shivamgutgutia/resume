@@ -13,6 +13,7 @@
             background-attachment: fixed;
             background-position: center;
             height: 100vh;
+            overflow: hidden; /* Hide the website's scrollbar */
         }
 
         #pdf-container {
@@ -21,19 +22,20 @@
             left: 0;
             width: 100%;
             height: 100%;
-            overflow: auto; /* Enable scrolling */
+            overflow: hidden; /* Enable scrolling within the PDF */
             scroll-behavior: smooth; /* Enable smooth scrolling */
         }
 
-        #pdf-object {
+        #pdf-embed {
             width: 100%;
             height: 100%;
+            z-index: -1; /* Place the PDF behind the body content */
         }
     </style>
 </head>
 <body>
     <div id="pdf-container">
-        <object id="pdf-object" data="Shivam Gutgutia Resume.pdf" type="application/pdf"></object>
+        <embed id="pdf-embed" src="Shivam Gutgutia Resume.pdf" type="application/pdf">
     </div>
 </body>
 </html>
