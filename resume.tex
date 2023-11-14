@@ -1,10 +1,9 @@
 \documentclass[a4paper,10pt]{article}
-\usepackage[left=1.0in,right=1in,top=1in,bottom=1in]{geometry}
+\usepackage[left=0.2in,right=0.2in,top=0.2in,bottom=0.2in]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage[hidelinks]{hyperref}
 \usepackage{xcolor}
-\usepackage{hyperref}
 \usepackage{tabularx}
 \usepackage{makecell}
 \usepackage{array}
@@ -26,42 +25,47 @@
 \begin{document}
 
 \begin{center}
-{\Huge\textbf{SHIVAM GUTGUTIA}}\\ % Larger font size for your name
-\vspace{10pt}
-Chennai, India 600048\\
-Phone No.: \href{tel:+91 7904860756}{+91 7904860756}\\
-Email: \href{mailto:shivamgutgutia159@gmail.com}{shivamgutgutia159@gmail.com}\\
-Linkedin: \href{https://www.linkedin.com/in/shivamgutgutia}{linkedin.com/in/shivamgutgutia}\\
-GitHub: \href{https://github.com/shivamgutgutia}{https://github.com/shivamgutgutia}
+    {\Huge\textbf{SHIVAM GUTGUTIA}}\\ % Larger font size for your name
+    \vspace{15pt}
+    \noindent
+    \begin{minipage}{0.5\textwidth}
+        \begin{center}
+        Chennai, India 600048 \\
+        Phone No.: \href{tel:+91 7904860756}{+91 7904860756} \\
+        Email: \href{mailto:shivamgutgutia159@gmail.com}{shivamgutgutia159@gmail.com}
+        \end{center}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \begin{center}
+        Linkedin: \href{https://www.linkedin.com/in/shivamgutgutia}{https://linkedin.com/in/shivamgutgutia} \\
+        GitHub: \href{https://github.com/shivamgutgutia}{https://github.com/shivamgutgutia}
+        \end{center}
+    \end{minipage}
 \end{center}
 
-\vspace{10pt}
+
 \section*{Professional Summary}
 Passionate and dedicated student with a robust skill set encompassing programming, algorithms, data structures, and proficiency in multiple programming languages. Additionally, equipped with strong management skills, eager to contribute expertise in computer science to innovative projects while effectively leading and coordinating teams when necessary.
 
-\vspace{10pt}
-
 \section*{Skills}
 \begin{center}
-\renewcommand{\arraystretch}{2}
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}|>{\raggedleft\arraybackslash}p{0.25\textwidth}| >{\centering\arraybackslash}p{0.15\textwidth} |>{\centering\arraybackslash}p{0.25\textwidth} |>{\centering\arraybackslash}p{0.2\textwidth}|}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}|c|c|c|c|}
 \hline
 \textbf{Skill Category} & \textbf{Beginner} & \textbf{Intermediate} & \textbf{Advanced} \\
 \hline
-\textbf{Programming Languages} & & Java, Javascript & C/C++, Python \\
+Programming Languages & & Java, JavaScript & C/C++, Python \\
 \hline
-\textbf{Machine Learning and Data Science} & Keras & Numpy, Scikit-Learn, Pandas, Matplotlib &  \\
+Machine Learning and Data Science & Keras & Numpy, Scikit-Learn, Pandas, Matplotlib &  \\
 \hline
-\textbf{Web Development} & FlaskAPI & Node, Express & \\
+Web Development & FlaskAPI, TypeScript & Node, Express & \\
 \hline
-\textbf{Database Management} & MongoDB & MySQL, Sqlite3 & \\
+Database Management & MongoDB & MySQL, Sqlite3, PostgreSQL & \\
 \hline
-\textbf{DevOps and Version Control} & Git, Docker & & \\
+DevOps and Version Control & Git, Docker & & \\
 \hline
 \end{tabular*}
 \end{center}
-
-\vspace{10pt}
 
 \section*{Work History}
 \subsection*{\large\textbf{Analytics Intern}}
@@ -71,33 +75,6 @@ August 2023 - Current
     \item Studied new technologies to support machine learning applications.
     \item Designed, implemented, and evaluated new models and rapid software prototypes to solve problems in machine learning and systems engineering.
 \end{itemize}
-
-\subsection*{\large\textbf{Event Coordinator}}
-\textit{DEVSOC, Vellore Institute of Technology - Vellore, Tamil Nadu} \\
-May 2023 - June 2023
-\begin{itemize}
-    \item South Asia's largest student-run hackathon with 1500+ participants and 3L+ prize pool.
-    \item Responsibilities: Event approvals, Marketing, Judging.
-    \item Managed event logistics and operations.
-\end{itemize}
-
-\subsection*{\large\textbf{Event Coordinator}}
-\textit{CookOff, Vellore Institute of Technology - Vellore, Tamil Nadu} \\
-August 2022 - September 2022
-\begin{itemize}
-    \item Competitive coding challenge with 400+ participants with a prize pool of 1L INR.
-    \item Responsibilities: Developing questions and test cases, Technical logistics, Mentoring.
-\end{itemize}
-
-\subsection*{\large\textbf{Volunteer}}
-\textit{Riviera, Vellore Institute of Technology - Vellore, Tamil Nadu} \\
-January 2023 - February 2023
-\begin{itemize}
-    \item Annual cultural fest of VIT, Vellore with over 40,000 participants.
-    \item Supported engaging, fun, and smooth-running events by helping with organization and planning.
-\end{itemize}
-
-\vspace{10pt}
 
 \section*{Education}
 \subsection*{\large\textbf{B.Tech in Computer Science Engineering}}
@@ -112,7 +89,7 @@ September 2021 - Current
 \textit{Modern Senior Secondary School, Chennai, Tamil Nadu} \\
 June 2019 - May 2020
 \begin{itemize}
-    \item GPA: 95.4\%.
+    \item GPA: 95.4\%
     \item Course Work: Maths, Python, SQL
 \end{itemize}
 
@@ -120,18 +97,15 @@ June 2019 - May 2020
 \textit{Modern Senior Secondary School, Chennai, Tamil Nadu} \\
 June 2017 - May 2018
 \begin{itemize}
-    \item GPA: 95.8\%.
+    \item GPA: 95.8\%
     \item Course Work: HTML/CSS, QBasic
 \end{itemize}
-
-\vspace{10pt}
 
 \section*{Affiliations}
 \begin{itemize}
     \item Chairperson of CodeChef-VIT
     \item Core member of Ayuda-NGO
 \end{itemize}
-\vspace{10pt}
 
 \section*{Certifications}
 \begin{itemize}
