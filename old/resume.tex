@@ -1,0 +1,135 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=0.2in,right=0.2in,top=0.2in,bottom=0.2in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{fontawesome5}
+\usepackage{array}
+
+% Define custom colors
+\definecolor{darkblack}{RGB}{0,0,0}
+\definecolor{gray}{RGB}{128,128,128}
+
+% Adjust section formatting
+\titleformat{\section}{\large\bfseries\color{darkblack}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{2ex plus 0.5ex minus 0.2ex}{1ex plus 0.2ex} % Increase spacing here
+
+% Customize itemize bullets
+\setlist[itemize]{label=\textbullet, left=0.5em, topsep=0.5em, itemsep=0.2em, parsep=0em}
+
+% Increase font size for job headings
+\titleformat{\subsection}{\large\bfseries\color{darkblack}}{}{0em}{}
+
+\begin{document}
+
+\begin{center}
+    {\Huge\textbf{SHIVAM GUTGUTIA}}\\ % Larger font size for your name
+    \vspace{15pt}
+    \noindent
+    \begin{minipage}{0.5\textwidth}
+        \begin{center}
+        Chennai, India 600048 \\
+        Phone No.: \href{tel:+91 7904860756}{+91 7904860756} \\
+        Email: \href{mailto:shivamgutgutia159@gmail.com}{shivamgutgutia159@gmail.com}
+        \end{center}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \begin{center}
+        Linkedin: \href{https://www.linkedin.com/in/shivamgutgutia}{\textcolor{blue!80!white}{https://linkedin.com/in/shivamgutgutia} {\faHandPointLeft}} \\
+        GitHub: \href{https://github.com/shivamgutgutia}{\textcolor{blue!80!white}{https://github.com/shivamgutgutia} {\faHandPointLeft}}
+        \end{center}
+    \end{minipage}
+\end{center}
+
+
+\section*{Professional Summary}
+Passionate and dedicated student with a robust skill set encompassing programming, algorithms, data structures, and proficiency in multiple programming languages. Additionally, equipped with strong management skills, eager to contribute expertise in computer science to innovative projects while effectively leading and coordinating teams when necessary.
+
+\section*{Skills}
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}|c|c|c|c|}
+\hline
+\textbf{Skill Category} & \textbf{Beginner} & \textbf{Intermediate} & \textbf{Advanced} \\
+\hline
+Programming Languages & & Java, JavaScript & C/C++, Python \\
+\hline
+Machine Learning and Data Science & Keras & Numpy, Scikit-Learn, Pandas, Matplotlib &  \\
+\hline
+Web Development & TypeScript & Flask, Node, Express & \\
+\hline
+Database Management & MongoDB & MySQL, Sqlite3, PostgreSQL & \\
+\hline
+DevOps and Version Control & Docker & Git, GitHub & \\
+\hline
+\end{tabular*}
+\end{center}
+
+\section*{Work History}
+
+\subsection*{\large\textbf{Analytics Intern}} \textit{CES IT Pvt Ltd - Chennai, India} \hfill August 2023 - Current
+\begin{itemize}[leftmargin=*,topsep=0pt]
+    \item Studied new technologies for machine learning applications.
+    \item Designed, implemented, and evaluated rapid prototypes solving problems in ML and systems engineering.
+\end{itemize}
+
+\section*{Education}
+
+\begin{itemize}
+\item
+\subsection*{\large\textbf{B.Tech in Computer Science Engineering}}
+\textit{Vellore Institute of Technology, Vellore, Tamil Nadu} \hfill September 2021 - Current
+\begin{itemize}[label=\textasteriskcentered , leftmargin=*,topsep=0pt]
+    \item CGPA: 9.62
+    \item Course Work: Data Structures and Algorithms, Database Systems, Operating Systems, Computer Network, Computer Architecture and Organization
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item
+\subsection*{\large\textbf{Higher Education - Computer Science}}
+\textit{Modern Senior Secondary School, Chennai, Tamil Nadu} \hfill June 2019 - May 2020
+\begin{itemize}[label=\textasteriskcentered , leftmargin=*,topsep=0pt]
+    \item GPA: 95.4\%
+    \item Course Work: Maths, Python, SQL
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item
+\subsection*{\large\textbf{Secondary Education - Computer Science}}
+\textit{Modern Senior Secondary School, Chennai, Tamil Nadu} \hfill June 2017 - May 2018
+\begin{itemize}[label=\textasteriskcentered , leftmargin=*,topsep=0pt]
+    \item GPA: 95.8\%
+    \item Course Work: HTML/CSS, QBasic
+\end{itemize}
+\end{itemize}
+
+\section*{Affiliations}
+\begin{itemize}
+    \item Chairperson of CodeChef-VIT
+    \item Core member of Ayuda-NGO
+\end{itemize}
+
+\section*{Projects}
+
+\begin{itemize}
+\item 
+\subsection*{\large\textbf{Contacts Generator - Backend}}
+\begin{itemize}[label=\textasteriskcentered , leftmargin=*,topsep=0pt]
+    \item \textbf{\textit{Description:}} The Contact File Backend Service seamlessly uploads, processes CSV, XLSX, or XLS contact data, extracting details to compile a unified VCF file compatible with Android and iOS, simplifying cross-platform contact management.
+    \item \textbf{\textit{Tools Used:}} Python, Flask, V-Object, Pandas, Docker, Google Cloud Run
+    \item \textbf{\textit{GitHub Repo:} }\href{https://github.com/shivamgutgutia/contactsGeneratorBackend}{\textcolor{blue!80!white}{https://github.com/shivamgutgutia/contactsGeneratorBackend} {\faHandPointLeft}}
+\end{itemize}
+\end{itemize}
+
+\section*{Certifications}
+\begin{itemize}
+    \item Programming Foundations with JavaScript, HTML and CSS by Duke University - 
+    \href{https://coursera.org/verify/ZZVTGPTSR36H}{\textcolor{blue!80!white}{Verify here}} {\faHandPointLeft}
+\end{itemize}
+
+\end{document}
