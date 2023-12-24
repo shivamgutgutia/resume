@@ -1,19 +1,31 @@
 \documentclass[9pt]{developercv}
 \usepackage{multicol}
-\setlength{\columnsep}{0mm}
-\usepackage{lipsum}  
+\setlength{\columnsep}{0mm} 
+
+\usepackage{geometry}
+
+% Set custom margins using geometry package
+\geometry{
+  top=10mm, % Adjust top margin
+  bottom=10mm, % Adjust bottom margin
+  left=10mm, % Adjust left margin
+  right=10mm, % Adjust right margin
+}
+
+\usepackage{setspace} % Load the setspace package
+
+% Set line spacing to 1.5 (adjust as needed)
+\setstretch{1.25}
 
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue, % Set the color of the link
-    urlcolor=blue % Set the color of URLs
+    linkcolor=blue,
+    urlcolor=blue
 }
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
 % TITLE AND CONTACT INFORMATION
-%----------------------------------------------------------------------------------------
 
 \begin{minipage}[t]{0.5\textwidth}
   \vspace{-\baselineskip}
@@ -22,7 +34,7 @@
 
   \vspace{6pt}
 
-  {\Large Developer $\sim$ Computer Science Engineer}
+  {\Large Developer, Computer Science Engineer}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.2\textwidth}
@@ -42,21 +54,20 @@
 \end{minipage}
 
 
-%----------------------------------------------------------------------------------------
-% SKILLS
-%----------------------------------------------------------------------------------------
-
+%SUMMARY
+\vspace{-10pt}
 \cvsect{Summary}
-\vspace{-6pt}
+\vspace{-10pt}
 
 \hfill
-I am a 3rd-year Computer Science student at Vellore Institute of Technology with a CGPA of 9.62 out of 10, ranking among the top 20 in a cohort of 3000-4000 CS students. I have hands-on experience as an Analytics Intern at CES IT Pvt Ltd, where I worked on Machine Learning and Deep Learning projects using Python. I also have skills in backend programming using Flask and Node JS. I enjoy competitive programming and learning new technologies.\\
+I am a 3rd-year Computer Science student at Vellore Institute of Technology, ranking among the top 20 in a cohort of 3000-4000 CS students, with a CGPA of 9.62 out of 10. I have hands-on experience as an Analytics Intern at CES IT Pvt Ltd, where I worked on Machine Learning and Deep Learning projects using Python. My skills extend to backend programming using Flask and Node JS. Competitive programming and learning new technologies fuel my passion. \\
 
-As the Chairperson of CodeChef-VIT, I have shown leadership and teamwork skills by leading and collaborating with other programmers in various initiatives. I am seeking a software developer role that allows me to apply my passion and expertise in creating websites, applications, and backend solutions. I am eager to join a team-oriented environment where I can contribute to innovation and growth. environment where I can contribute to innovation and growth.
+As the Chairperson of CodeChef-VIT, I led and collaborated with other programmers in various initiatives, honing my leadership and teamwork skills. I seek a software developer role that allows me to apply my passion and expertise in creating websites, applications, and backend solutions. I am eager to join a team-oriented environment where I can contribute to innovation and growth.
 
-
+%SKILLS
+\vspace{-5pt}
 \cvsect{Skills}
-\vspace{-6pt}
+\vspace{-10pt}
 
 \begin{minipage}[t]{0.2\textwidth}
   \textbf{Languages:}
@@ -65,7 +76,7 @@ As the Chairperson of CodeChef-VIT, I have shown leadership and teamwork skills 
 \begin{minipage}[t]{0.73\textwidth}
   \textbf{C/C++, Python}, Java, SQL, JavaScript
 \end{minipage}
-\vspace{4mm}
+\vspace{2mm}
 
 \begin{minipage}[t]{0.2\textwidth}
   \textbf{Machine Learning:}
@@ -74,7 +85,7 @@ As the Chairperson of CodeChef-VIT, I have shown leadership and teamwork skills 
 \begin{minipage}[t]{0.73\textwidth}
   \textbf{Numpy, Pandas}, Matplotlib, Keras, Sci-kit learn
 \end{minipage}
-\vspace{4mm}
+\vspace{2mm}
 
 \begin{minipage}[t]{0.2\textwidth}
   \textbf{WebDev:}
@@ -83,26 +94,27 @@ As the Chairperson of CodeChef-VIT, I have shown leadership and teamwork skills 
 \begin{minipage}[t]{0.73\textwidth}
   \textbf{Flask, Node, SQL}, PostreSQL, MongoDB
 \end{minipage}
-\vspace{4mm}
+\vspace{2mm}
 
 \begin{minipage}[t]{0.2\textwidth}
   \textbf{DevOps:}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.73\textwidth}
-  \textbf{Git,GitHub}, Docker, Google Cloud Platform
+  \textbf{Git, GitHub}, Docker, Google Cloud Platform
 \end{minipage}
 
 
-%----------------------------------------------------------------------------------------
+
 % Projects
-%----------------------------------------------------------------------------------------
+\vspace{-5pt}
 \cvsect{Projects}
+\vspace{-6pt}
 \begin{entrylist}
   \entry
   {Web Dev}
   {Contactify}
-  {\icon{Github}{11}{\href{https://github.com/shivamgutgutia/Contactify}{/shivamgutgutia/Contactify}}\\}
+  {\icon{Github}{11}{\href{https://github.com/shivamgutgutia/Contactify}{/shivamgutgutia/Contactify}}}
   {The Contact File Backend Service seamlessly uploads, processes CSV, XLSX, XLS or ODS contact data,   extracting
     details to compile a unified VCF file compatible with Android and iOS, simplifying cross-platform contact management.\\
     \textbf{Tech Used: } Python, Flask, vObject library, Pandas, Docker, GitHub Actions, Google Cloud Run
@@ -111,18 +123,37 @@ As the Chairperson of CodeChef-VIT, I have shown leadership and teamwork skills 
   \entry
   {Internet of Things}
   {MQTT-Home Automation}
-  {\icon{Github}{11}{\href{https://github.com/shivamgutgutia/MQTT-HomeAutomation}{/shivamgutgutia/MQTT-HomeAutomation}}\\}
+  {\icon{Github}{11}{\href{https://github.com/shivamgutgutia/MQTT-HomeAutomation}{/shivamgutgutia/MQTT-HomeAutomation}}}
   {The simulation demonstrates how you can control home appliances from your phone using a simple protocol called MQTT. It can further be improved by adding sensors that can automatically trigger certain actions.\\
     \textbf{Tech Used: } Cisco Packet Tracer, MQTT, Python
   }
 
 \end{entrylist}
 
-%----------------------------------------------------------------------------------------
+% EXPERIENCE
+
+\vspace{-20 pt}
+\cvsect{Experience}
+\vspace{-6pt}
+\begin{entrylist}
+  \entry
+  {August 2023 - \\
+    December 2023}
+  {Analytics Intern}
+  {\href{https://www.cesltd.com/}{CES IT Pvt Ltd}}
+  {\vspace{-10pt}
+    \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+      \item {Studied new technologies for Machine learning and Deep learning applications.}
+      \item {Designed, implemented, and evaluated prototypes solving problems in ML and systems engineering.}
+    \end{itemize}
+    \texttt{Keras} \slashsep \texttt{Scikit-Learn} \slashsep \texttt{Numpy} \slashsep \texttt{Pandas} \slashsep \texttt{Matplotlib}}
+\end{entrylist}
+
 % EDUCATION
-%----------------------------------------------------------------------------------------
+
 \vspace{-10 pt}
 \cvsect{Education}
+\vspace{-6pt}
 \begin{entrylist}
   \entry
   {September 2021 - \\ Current}
@@ -144,46 +175,21 @@ As the Chairperson of CodeChef-VIT, I have shown leadership and teamwork skills 
   {\textbf{Percentage: }95.8\%}
 \end{entrylist}
 
-%----------------------------------------------------------------------------------------
-% EXPERIENCE
-%----------------------------------------------------------------------------------------
-\vspace{-10 pt}
-\cvsect{Experience}
-\begin{entrylist}
-  \entry
-  {August 2023 - \\
-    December 2023}
-  {Analytics Intern}
-  {\href{https://www.cesltd.com/}{CES IT Pvt Ltd}}
-  {\vspace{-10pt}
-    \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
-      \item {Studied new technologies for Machine learning and Deep learning applications.}
-      \item {Designed, implemented, and evaluated prototypes solving problems in ML and systems engineering.}
-    \end{itemize}
-    \texttt{Keras} \slashsep \texttt{Scikit-Learn} \slashsep \texttt{Numpy} \slashsep \texttt{Pandas} \slashsep \texttt{Matplotlib}}
-\end{entrylist}
-%----------------------------------------------------------------------------------------
 % AFFILIATIONS
-%----------------------------------------------------------------------------------------
-\vspace{-10 pt}
+
+\vspace{-15 pt}
 \cvsect{Affiliations}
-\vspace{-6pt}
+\vspace{-10pt}
 
 \hspace{26mm} Chairperson at CodeChef-VIT \hspace{20mm}Core Member at Ayuda NGO -   
 
-%----------------------------------------------------------------------------------------
-
-%----------------------------------------------------------------------------------------
 % CERTIFICATIONS
-%----------------------------------------------------------------------------------------
-\vspace{0 pt}
-\cvsect{Certifications}
 \vspace{-6pt}
+\cvsect{Certifications}
+\vspace{-10pt}
 
 \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=75pt]
   \item Programming Foundations with JavaScript, HTML and CSS by Duke University - \href{https://coursera.org/verify/ZZVTGPTSR36H}{Verify certificate}
 \end{itemize}
-
-%----------------------------------------------------------------------------------------
 
 \end{document}
