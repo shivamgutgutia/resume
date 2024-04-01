@@ -4,63 +4,13 @@
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="icon" href="favicon.png" type="image/png" />
 		<title>Shivam Gutgutia Resume</title>
-		<style>
-			body {
-				margin: 0;
-				padding: 0;
-				background-size: cover;
-				background-repeat: no-repeat;
-				background-attachment: fixed;
-				background-position: center;
-				height: 100vh;
-				overflow: hidden; /* Hide the website's scrollbar */
-			}
-
-			#pdf-container {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				overflow: hidden; /* Enable scrolling within the PDF */
-				scroll-behavior: smooth; /* Enable smooth scrolling */
-			}
-
-			#pdf-embed {
-				width: 100%;
-				height: 100%;
-				z-index: -1; /* Place the PDF behind the body content */
-			}
-		</style>
 	</head>
 	<body>
 		<div id="pdf-container">
 			<script>
-				function isMobileDevice() {
-					return (
-						typeof window.orientation !== "undefined" ||
-						navigator.userAgent.indexOf("IEMobile") !== -1
-					);
-				}
-
 				window.onload = function () {
-					if (isMobileDevice()) {
-						// Redirect to Google Drive link for download on mobile
-						window.location.href =
-							"https://drive.google.com/file/d/1qvWaN14XE9rNS50KQebtCCqHb2rLMwIz/view?usp=sharing";
-					} else {
-						// Embed the PDF for desktop
-						var pdfEmbed = document.createElement("embed");
-						pdfEmbed.setAttribute("id", "pdf-embed");
-						pdfEmbed.setAttribute(
-							"src",
-							"Shivam Gutgutia Resume.pdf"
-						);
-						pdfEmbed.setAttribute("type", "application/pdf");
-						document
-							.getElementById("pdf-container")
-							.appendChild(pdfEmbed);
-					}
+					window.location.href =
+						"https://drive.google.com/file/d/1qvWaN14XE9rNS50KQebtCCqHb2rLMwIz/view?usp=sharing";
 				};
 			</script>
 		</div>
